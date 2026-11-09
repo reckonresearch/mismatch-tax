@@ -1,0 +1,28 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      # Mock path proves the pipeline; measured path proves the claims.
+      - run: python make_synthetic_cells.py
+      - run: python mismatch_tax.py data/mock --allow-mock
+      - run: python dispatch/solve.py --cells data/mock --prices dispatch/prices.yaml --demand dispatch/demand.example.yaml --allow-mock
+      - name: measured corpus (skipped if absent)
+        run: |
+          if ls data/measured/*.jsonl >/dev/null 2>&1; then
+            python mismatch_tax.py data/measured
+            python dispatch/solve.py --cells data/measured --prices dispatch/prices.yaml --demand dispatch/demand.example.yaml
+          else
+            echo "no measured cells in this checkout"
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: |
+            mismatch_tax_*.csv
+            dispatch_result.json

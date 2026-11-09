@@ -1,0 +1,17 @@
+# Node-hour prices per accelerator, USD.
+#
+# status: placeholder | measured
+#   placeholder: numbers below are round illustrative values and carry NO claim.
+#   measured:    numbers are the price actually paid for the rented box at
+#                capture time, taken from the rental invoice. This is the
+#                provenance-clean source: it is the same box, same month, as the
+#                trace. Record provider and invoice date per entry.
+#
+# Replace every entry before publishing any $/served-token figure.
+status: placeholder
+silicon:
+  l40s:      {usd_per_hour: 1.00, provider: REPLACE, invoice_date: REPLACE}
+  h100-pcie: {usd_per_hour: 2.00, provider: REPLACE, invoice_date: REPLACE}
+  h100-sxm:  {usd_per_hour: 3.00, provider: REPLACE, invoice_date: REPLACE}
+  mi300x:    {usd_per_hour: 2.50, provider: REPLACE, invoice_date: REPLACE}
+  a100-80g:  {usd_per_hour: 1.50, provider: REPLACE, invoice_date: REPLACE}

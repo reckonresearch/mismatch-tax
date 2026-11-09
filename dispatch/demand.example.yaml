@@ -1,0 +1,9 @@
+# Example demand vector. Each class is a (prompt, output) shape on the corpus
+# grid with a latency SLO. rps = requests per second to serve.
+#
+# For the backtest, generate this file from a public trace with
+# dispatch/trace_to_demand.py instead of hand-writing it.
+classes:
+  - {name: chat-short,    prompt: 512,  output: 128, rps: 40.0, ttft_max_ms: 500,  tpot_max_ms: 40}
+  - {name: chat-long,     prompt: 2048, output: 256, rps: 15.0, ttft_max_ms: 1500, tpot_max_ms: 40}
+  - {name: rag-longctx,   prompt: 7680, output: 128, rps: 4.0,  ttft_max_ms: 4000, tpot_max_ms: 60}

@@ -1,0 +1,100 @@
+[
+  {
+    "file": "data/measured/a100-80g_llama3-8b.jsonl",
+    "silicon": "a100-80g",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "captured",
+    "precision": [
+      "bf16"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "817515ef5f68735f15d7fab1ed7011c2"
+  },
+  {
+    "file": "data/measured/a100-80g_qwen3-30b-a3b.jsonl",
+    "silicon": "a100-80g",
+    "model": "qwen3-30b-a3b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "captured",
+    "precision": [
+      "bf16"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "1b07de2d0afa3310583eb3fed722dc4a"
+  },
+  {
+    "file": "data/measured/h100-pcie_llama3-8b.jsonl",
+    "silicon": "h100-pcie",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "self_reported",
+    "precision": [
+      "bf16(assumed, pre-schema4)"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "7bd0e65f6a38337bb2a1cf2460f7faba"
+  },
+  {
+    "file": "data/measured/h100-sxm_llama3-8b.jsonl",
+    "silicon": "h100-sxm",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "captured",
+    "precision": [
+      "bf16"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "b13a63efb064d5084105b90438393bab"
+  },
+  {
+    "file": "data/measured/h100-sxm_llama3-8b_fp8.jsonl",
+    "silicon": "h100-sxm",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "captured",
+    "precision": [
+      "fp8"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "3fec180ca2b322d96b5756712fddaceb"
+  },
+  {
+    "file": "data/measured/l40s_llama3-8b.jsonl",
+    "silicon": "l40s",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "self_reported",
+    "precision": [
+      "bf16(assumed, pre-schema4)"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "472e5decfe7a6b9182f96fafdf151b03"
+  },
+  {
+    "file": "data/measured/mi300x_llama3-8b.jsonl",
+    "silicon": "mi300x",
+    "model": "llama3-8b",
+    "n": 60,
+    "schema_out": 5,
+    "source": "measured",
+    "silicon_provenance": "self_reported",
+    "precision": [
+      "bf16"
+    ],
+    "dropped_fields": [],
+    "raw_md5": "753c0a3bd873cfefedd6db11e4aaf7a3"
+  }
+]

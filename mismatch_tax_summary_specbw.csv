@@ -1,0 +1,6 @@
+silicon,silicon_provenance,bw_ceiling,model,tax_median,tax_best,tax_worst,frac_memory_bound,n_configs
+l40s,self_reported,spec,llama3-8b,0.1732,0.0432,0.23815,1.0,30
+h100-pcie,self_reported,spec,llama3-8b,0.236175,0.1975,0.3392,1.0,30
+a100-80g,captured,spec,llama3-8b,0.266225,0.2429,0.7653,1.0,30
+mi300x,self_reported,spec,llama3-8b,0.45752499999999996,0.34535,0.8601,1.0,30
+h100-sxm,captured,spec,llama3-8b,0.5455125,0.3802,0.7031499999999999,1.0,30
