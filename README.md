@@ -56,3 +56,13 @@ Python 3.11+. No GPU needed; everything here runs on the traces.
 
 Built with Claude Code. Measurements, hypotheses, and interpretation are the
 author's.
+
+## Companion paper
+
+This repo is the first empirical companion to *The Mismatch Tax* (Scott, August 2026),
+which defines the tax as the loss when allocated, busy silicon runs outside its design
+point, and makes four dated predictions. The paper is the framework; this repo is the
+first pre-registered measurement of it on a public corpus.
+
+- Paper: https://www.sidney.fyi/papers/the-mismatch-tax.pdf
+- Corpus: https://github.com/reckonresearch/reckon (`data/measured/`)
