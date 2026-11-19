@@ -1,6 +1,8 @@
 # Results: first measured Mismatch Tax run
 
-Run date: 2026-11-09. Pre-registration: HYPOTHESIS.md (commit 60f53dd).
+Run date: 2026-11-09. Status: exploratory, not pre-registered. HYPOTHESIS.md was
+committed in 60f53dd with its intervals blank, four minutes before these results
+were committed, so nothing below confirms or falsifies a prior prediction.
 Corpus: five bf16 Llama-3-8B cells, 30 configurations x 2 repetitions each,
 served by vLLM. Qwen3-30B-A3B (MoE) and H100 SXM fp8 cells excluded per policy.
 
@@ -60,7 +62,11 @@ The earlier unreproduced "57% on MI300X" figure is retired. The measured MI300X
 median is 0.46 against spec bandwidth, 0.22 against the (invalid) copy
 ceiling. The number nearest 57% in this corpus belongs to H100 SXM.
 
-## Confounds, declared before the run and still standing
+## Confounds still standing
+
+The first, second and fourth were written into HYPOTHESIS.md before the results
+were committed. The H100 SXM detail in the second and all of the third were
+added afterward.
 
 - MI300X, L40S, and H100 PCIe are `self_reported` silicon provenance.
 - Serving-stack version varies by cell. The H100 SXM environment record lists

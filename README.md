@@ -2,8 +2,15 @@
 
 Two analyses built on the Berth measured corpus (`data/measured/`, schema 5,
 six cells, five accelerators). Both read only `source: measured` rows and fail
-loud on any other schema or source. Hypotheses are pre-registered in
-HYPOTHESIS.md before either tool runs on measured data.
+loud on any other schema or source.
+
+**Status of the first run: exploratory, not pre-registered.** HYPOTHESIS.md was
+committed with its dates and intervals blank, four minutes before the first
+measured results were committed, so no prediction was registered. The headline
+ceiling (vendor spec bandwidth) was also chosen after the first results.
+RESULTS.md stands as an exploratory analysis. The next run, the H100 SXM
+re-serve on current vLLM, will be registered with its interval filled and
+committed before any data for it exists.
 
 ## 1. Mismatch Tax
 
@@ -61,8 +68,11 @@ author's.
 
 This repo is the first empirical companion to *The Mismatch Tax* (Scott, August 2026),
 which defines the tax as the loss when allocated, busy silicon runs outside its design
-point, and makes four dated predictions. The paper is the framework; this repo is the
-first pre-registered measurement of it on a public corpus.
+point, and makes four dated predictions. The paper is the framework. This repo is an
+exploratory measurement of the same-chip gap the paper calls configuration loss: how far
+one serving stack falls short of each card's own decode ceiling. It does not measure the
+mismatch tax itself, which turns on loss that only a different type of chip recovers
+(paper, Sections 3 and 7.4).
 
 - Paper: https://www.sidney.fyi/papers/the-mismatch-tax.pdf
 - Corpus: https://github.com/reckonresearch/reckon (`data/measured/`)
