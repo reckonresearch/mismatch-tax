@@ -1,5 +1,13 @@
 # Pre-registered hypotheses
 
+> **Record note (2026-11-18).** This template was committed with its dates and
+> intervals blank in commit 60f53dd on 2026-11-09, four minutes before the first
+> measured results were committed, and was never filled. The first run is
+> exploratory. The template below is kept unchanged as the record; the next
+> registration goes in a new dated section, filled in and committed before any
+> data for that run exists.
+
+
 Fill in and commit this file BEFORE running either tool on `data/measured/`.
 The commit timestamp is the registration. Results go in RESULTS.md afterward,
 whatever they are.
